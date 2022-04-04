@@ -1,10 +1,13 @@
 import { Button, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Name from "../components/Name.component";
+import { PATHS } from "../config/routes.config";
 
 function Players(props) {
     const [name, setName] = useState("");
     const [player, setPlayer] = useState([]);
+    const navigate = useNavigate()
 
     const addPlayer = async (e) => {
         e.preventDefault();
@@ -25,6 +28,11 @@ function Players(props) {
         const name = target.className;
         const newArr = player.filter((item) => item !== name);
         setPlayer(newArr);
+    };
+
+    const goCheck = (e) => {
+        e.preventDefault()
+        navigate(PATHS.CHECK)
     };
 
     return (
@@ -55,6 +63,7 @@ function Players(props) {
                 variant="contained"
                 type="submit"
                 className="button_player_next"
+                onClick={goCheck}
             >
                 شروع بازی
             </Button>

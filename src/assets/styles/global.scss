@@ -99,7 +99,7 @@ form {
 
 .box {
     margin-top: 15px;
-    max-height: 480px;
+    height: 480px;
     overflow: scroll;
 }
 
@@ -129,7 +129,13 @@ form {
         height: 25px;
         border-radius: 3px;
         color: #E53935;
-        svg {
-        }
     }
+}
+
+.check {
+    width: 365px;
+    height: 98vh;
+    background-color: #f2f8fd;
+    border-radius: 5px;
+    padding: 5px;
 }
