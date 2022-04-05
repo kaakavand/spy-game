@@ -138,4 +138,25 @@ form {
     background-color: #f2f8fd;
     border-radius: 5px;
     padding: 5px;
+    text-align: right;
+    display: inline-block;
+}
+
+#button_rol {
+    width: 47%;
+    height: 30px;
+    background-color: #3F51B5 !important;
+    color: #E8EAF6;
+    display: inline-block;
+    margin: 5px !important;
+    height: 30px !important;
+    font-family: 'iransans';
+    text-transform: lowercase;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+#button_rol {
+    height: 50px !important;
 }
